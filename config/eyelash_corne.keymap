@@ -24,7 +24,7 @@
 #define QWERTY 0
 #define NUMBER 1
 #define SYMBOL 2
-#define FN     3
+#define FN     3 // Fn layer
 
 / {
     behaviors {
