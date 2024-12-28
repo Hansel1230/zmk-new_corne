@@ -21,6 +21,10 @@
 
 #define ZMK_MOUSE_DEFAULT_MOVE_VAL 1200  // 600
 #define ZMK_MOUSE_DEFAULT_SCRL_VAL 20    // 10
+#define QWERTY 0
+#define NUMBER 1
+#define SYMBOL 2
+#define FN     3
 
 / {
     behaviors {
@@ -53,8 +57,8 @@
             bindings = <
 &kp ESC  &kp Q  &kp W      &kp E     &kp R  &kp T                              &kp UP                &kp Y        &kp U  &kp I      &kp O    &kp P     &kp BSPC
 &kp TAB  &kp A  &kp S      &kp D     &kp F  &kp G                    &kp LEFT  &kp ENTER  &kp RIGHT  &kp H        &kp J  &kp K      &kp L    &kp SEMI  &kp SQT
-&kp LCTRL  &kp Z  &kp X      &kp C     &kp V  &kp B       &kp SPACE              &kp DOWN              &kp N        &kp M  &kp COMMA  &kp DOT  &kp FSLH  &kp 
-                             &kp LGUI  &mo 1  &lt 3 SPACE                                              &lt 3 SPACE  &mo 2  &kp RALT
+&kp LCTRL  &kp Z  &kp X      &kp C     &kp V  &kp B       &kp SPACE              &kp DOWN              &kp N        &kp M  &kp COMMA  &kp DOT  &kp FSLH  &kp LSHFT
+                             &kp LSHFT LGUI  &mo NUMBER  &lt FN SPACE                                              &lt FN SPACE  &mo NUMBER  &mo SYMBOL
             >;
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
         };
